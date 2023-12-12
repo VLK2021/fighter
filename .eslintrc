@@ -2,12 +2,12 @@
     "env": {
         "browser": true
     },
-    "extends": ["airbnb", "prettier"],
+    "extends": ["airbnb", "prettier", "plugin:jsx-a11y/recommended"],
     "parserOptions": {
         "ecmaVersion": 2022,
         "sourceType": "module"
     },
-    "plugins": ["prettier"],
+    "plugins": ["prettier", "jsx-a11y", "import"],
     "rules": {
         "prettier/prettier": "error",
         "arrow-body-style": 0,
