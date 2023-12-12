@@ -11,3 +11,10 @@
 .fighter-preview___left {
   align-items: flex-start;
 }
+
+.fighter-preview___info > p{
+  width: 10rem;
+  font-size: 1rem;
+  color: yellow;
+  font-weight: bold;
+}
