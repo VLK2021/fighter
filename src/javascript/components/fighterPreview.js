@@ -12,7 +12,7 @@ export function createFighterPreview(fighter, position) {
             tagName: 'img',
             attributes: {
                 src: fighter.source,
-                height: '230px'
+                height: '180px'
             }
         });
 
