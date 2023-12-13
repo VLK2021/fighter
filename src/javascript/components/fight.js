@@ -7,15 +7,17 @@
 // }
 
 export function getHitPower(fighter) {
-    const randomHit = Math.random() + 1;
-    const hitPower = fighter.attack * randomHit;
-    return hitPower;
+    const { attack } = fighter;
+    const criticalHitChance = Math.random() + 1;
+    const power = attack * criticalHitChance;
+    return power;
 }
 
 export function getBlockPower(fighter) {
-    const randomBlock = Math.random() + 1;
-    const blockPower = fighter.defense * randomBlock;
-    return blockPower;
+    const { defense } = fighter;
+    const dodgeChance = Math.random() + 1;
+    const power = defense * dodgeChance;
+    return power;
 }
 
 export function getDamage(attacker, defender) {
